@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width-device-width.initial-scale=1.0">
+ <meta name="author"content="Júlia">
+
+ <title>EXFormulario</title>
+
+<style> 
+ #cor{
+ color:teal;
+ font-style:whitesmoke;
+ }
+
+ #menu ul {
+ padding:0px;
+ margin:0px;
+ background-color:#EDEDED;
+ list-style:none;
+}
+#menu ul li { display: inline; }
+#menu ul li a {
+ padding: 2px 10px;
+ display: inline-block;
+
+ /* visual do link */
+ background-color:#EDEDED;
+ color: #333;
+ text-decoration: none;
+ border-bottom:3px solid #EDEDED;
+}
+#menu ul li a:hover {
+ background-color:#D6D6D6;
+ color: #6D6D6D;
+ border-bottom:3px solid #EA0000;
+}
+ #myHeader{
+ background-color:black;
+ color:seashell;
+ padding: 40px;
+ text-align: center;
+ }
+ table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+th, td {
+ padding: 5px;
+ text-align: left; 
+}
+ 
+ </style>
+
+<head>
+ 
+ </head> 
+
+<body>
+ 
+ <nav id="menu">
+
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">Musicas</a></li>
+ <li><a href="#">Sobre</a></li>
+ </ul>
+
+ <h1 id="myHeader"> <em id= "cor">A polêmica de uma música</em></h1>
+
+ </nav>
+ <h2>Júlia Caxambu de Melo - 17 anos</h2>
+ <p>Cursa Informática no IFSP</p>
+ 
+<iframe width="816" height="459" src="https://www.youtube.com/embed/BlWNRk7m0pk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<table align='center'>
+<tr>
+ <th>Gênero</th>
+ <th colspan="2">Cantor/Cantores</th>
+</tr> 
+ <tr>
+ <td>Payphone</td>
+ <td>Maroon 5</td>
+ <td>Wiz Khalifa</td>
+ </tr>
+ <tr>
+ <td>Please me</td>
+ <td>Bruno Mars</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>Atrás da Porta</td>
+ <td>Elis Regina</td>
+ <td></td>
+ </tr>
+ 
+ 
+</table>
+
+<audio autoplay="autoplay" controls="controls" a>
+ <source src="manny-walters-my-own-fault-sofar-cape-town.mp3" type="audio/mp3" />
+</audio>
+<br>
+
+<!--<map name="Musics" >
+ <area shape="rect" coords="1627,1165,1640,1182" alt="Sol" href="Sol.png">
+
+</map>
+ 
+ </table>-->
+ 
+ <form>
+ <fieldset align="center">
+ <h2 align="center">Indentificação de Usuário</h2>
+
+ <label for="nome_id">Nome:</label>
+ <input type="text" name="nome" id="nome_id"
+ placeholder="Nome completo" title="Por favor">
+ <td>
+
+ <label for="pass">Senha: </label>
+ </td>
+ <td align="left">
+ <input type="password" name="pass">
+ </td>
+
+ <p><label for="cpf">CPF:</label>
+ <input type="text" class="form-control" 
+ id="cpf" name="cpf" placeholder="000.000.000-00"></p>
+
+ <label for="gênero">Genêro:</label>
+ <select name="Sexo"> 
+ <option value="feminino">Feminino</option> 
+ <option value="masculino">Masculino</option> 
+ <option value="outro">Outro</option> 
+ </select>
+ 
+ <label>Nascimento: </label>
+ <input type="date">
+
+ <p><label for="Estado civil">Estado Civil:</label></p>
+ <input type="radio" name="civil" value = "solteiro">
+ <label>Solteiro | Solteira</label>
+ <input type="radio" name="civil" value = "casado">
+ <label>Casado | Casada</label>
+ <input type="radio" name="civil" value = "divorciado">
+ <label>Divorciado | Divorciada</label>
+ <input type="radio" name="civil" value = "viúvo">
+ <label>Viúvo | Viúva</label>
+ 
+ <p><label for="Escolaridade">Escolaridade:</label></p>
+ <select name="Escolaridade"> 
+ <option value="Educação infantil">Educação infantil</option> 
+ <option value="Fundamental">Fundamental</option> 
+ <option value="Médio">Médio</option>
+ <option value="Graduação">Graduação</option>
+ <option value="Pós-Graduação">Pós-Graduação</option>
+ <option value="Mestrado">Mestrado</option>
+ <option value="Doutorado">Doutorado</option>
+ </select>
+
+ <p>
+ <label for="ocupaçao_id">Ocupação Principal:</label>
+ <input type="text" name="ocupaçao" id="ocupaçao_id"
+ title="Digite aqui"> 
+ 
+ <p><label for="renda">Renda Mensal:</label></p>
+ <select name="Renda Mensal" > 
+ <option value="1">Menor que R$998,00 (1 salário minimo)</option> 
+ <option value="2">De 1 salário mínimo até 2 salários mínimos</option> 
+ <option value="3">De 3 salários mínimos até 4 salários mínimos</option>
+ <option value="4">Maior que 4 salários mínimos</option>
+ </select>
+
+ <p><label for="dependentes_id">Números de Dependentes:</label>
+ <input type="text" name="dependentes" id="dependentes_id"
+ title="Digite aqui"> </p>
+ 
+ <p><label>Telefone: </label>
+ <input type="tel" class="form-control" 
+ id="telefone" name="telefone" placeholder="(000)00000-0000">
+ 
+ <label>Email:</label>
+ <input type="email" placeholder="Format:example@dadadsf.com">
+ </p>
+
+<p> <button type="reset" value="botao_id">Apagar</button>
+ <button type="submit" id="botao_id">Enviar </button> </p>
+ 
+ </fieldset>
+ <fieldset align="center">
+ <h2 align="center">Localização</h2>
+ 
+ <p><label for="Estado">Estado:</label></p>
+ <select name="estados-brasil">
+ <optgroup label="Região Norte">
+ <option value="AM">Amazonas</option>
+ <option value="RR">Roraima</option>
+ <option value="AP">Amapá</option>
+ <option value="PA">Pará</option>
+ <option value="TO">Tocantins</option>
+ <option value="RO">Rondônia</option>
+ <option value="AC">Acre</option>
+ </optgroup>
+
+ <optgroup label="Região Nordeste">
+ <option value="MA">Maranhão</option>
+ <option value="PI">Piauí</option>
+ <option value="CE">Ceará</option>
+ <option value="RN">Rio Grande do Norte</option>
+ <option value="PE">Pernambuco</option>
+ <option value="PB">Paraíba</option>
+ <option value="SE">Sergipe</option>
+ <option value="AL">Alagoas</option>
+ <option value="BA">Bahia</option>
+ </optgroup>
+
+ <optgroup label="Região Centro-Oeste">
+ <option value="MT">Mato Grosso</option>
+ <option value="MS">Mato Grosso do Sul</option>
+ <option value="GO">Goiás</option>
+ <option value="DF">Distrito Federal</option>
+ </optgroup>
+
+ <optgroup label="Região Sudeste">
+ <option value="SP">São Paulo</option>
+ <option value="RJ">Rio de Janeiro</option>
+ <option value="ES">Espírito Santo</option>
+ <option value="MG">Minas Gerais</option>
+ </optgroup>
+
+ <optgroup label="Região Sul"> 
+ <option value="PR">Paraná</option>
+ <option value="RS">Rio Grande do Sul</option>
+ <option value="SC">Santa Catarina</option>
+ </optgroup> 
+ </select>
+ <br>
+ <p><label for="Cidades">Cidades:</label></p>
+ <select name="cidades">
+
+ <optgroup label="AM"> 
+ <option class="AM" value="cidade1">Alvarães</option> 
+ <option class="AM" value="cidade2">Amaturá</option>
+ <option class="AM" value="cidade3">Anamã</option> 
+ <option class="AM" value="cidade4">Anori</option> 
+ <option class="AM" value="cidade5">Apuí</option> 
+ <option class="AM" value="cidade6">Atalaia do Norte</option> 
+ <option class="AM" value="cidade7">Autazes</option> 
+ <option class="AM" value="cidade8">Barcelos</option>
+ <option class="AM" value="cidade9">Barreirinha</option> 
+ <option class="AM" value="cidade10">Benjamin Constant</option> 
+ <option class="AM" value="cidade11">Beruri</option> 
+ <option class="AM" value="cidade12">Boa Vista do Ramos</option> 
+ <option class="AM" value="cidade13">Boca do Acre</option> 
+ <option class="AM" value="cidade14">Borba</option> 
+ <option class="AM" value="cidade15">Caapiranga</option> 
+ <option class="AM" value="cidade16">Canutama</option> 
+ <option class="AM" value="cidade17">Carauari</option> 
+ </optgroup>
+
+ <optgroup label="RP">
+ <option class="RP" value="cidade18">Caçapava</option>
+ <option class="RP" value="cidade19">Caieiras</option>
+ <option class="RP" value="cidade20">Cachoeira Paulista</option>
+ <option class="RP" value="cidade21">Ribeirão Preto</option>
+ </optgroup>
+
+ <optgroup label="AP">
+ <option class="AP" value="cidade22">Macapá</option>
+ <option class="AP" value="cidade23">Santana</option>
+ <option class="AP" value="cidade24">Cutias</option>
+ </optgroup>
+
+ <optgroup label="PA">
+ <option class="PA" value="cidade25">Belém</option>
+ <option class="PA" value="cidade26">Santarém</option>
+ <option class="PA" value="cidade27">Marabá</option>
+ </optgroup>
+
+ <optgroup label="TO">
+ <option class="TO" value="cidade28">Palmas</option>
+ <option class="TO" value="cidade29">Gurupi</option>
+ <option class="TO" value="cidade30">Porto Nacional</option>
+ </optgroup>
+
+ <optgroup label="RO">
+ <option class="RO" value="cidade31">Porto Velho</option>
+ <option class="RO" value="cidade32">Cerejeiras</option>
+ <option class="RO" value="cidade33">Jaru</option>
+ </optgroup>
+
+ <optgroup label="AC">
+ <option class="AC" value="cidade34">Rio Branco</option>
+ <option class="AC" value="cidade35">Xapuri</option>
+ <option class="AC" value="cidade36">Cruzeiro do Sul</option>
+ </optgroup>
+
+ <optgroup label="MA">
+ <option class="MA" value="cidade37">São Luís</option>
+ <option class="MA" value="cidade38">Caxias</option>
+ <option class="MA" value="cidade39">Imperatriz</option>
+ </optgroup>
+
+ <optgroup label="PI">
+ <option class="PI" value="cidade40">Teresina</option>
+ <option class="PI" value="cidade41">Parnaíba</option>
+ <option class="PI" value="cidade42">Picos</option>
+ </optgroup>
+
+ <optgroup label="CE">
+ <option class="CE" value="cidade43">Fortaleza</option>
+ <option class="CE" value="cidade44">Crato</option>
+ <option class="CE" value="cidade45">Juazeiro do Norte</option>
+ </optgroup>
+
+ <optgroup label="RN">
+ <option class="RN" value="cidade46">Natal</option>
+ <option class="RN" value="cidade47">Taipu</option>
+ <option class="RN" value="cidade48">Macau</option>
+ </optgroup>
+
+ <optgroup label="PE">
+ <option class="PE" value="cidade49">Recife</option>
+ <option class="PE" value="cidade50">Caruaru</option>
+ <option class="PE" value="cidade51">Petrolina</option>
+ <option class="PE" value="cidade52">Olinda</option>
+ </optgroup>
+
+ <optgroup label="PB">
+ <option class="PB" value="cidade53">João Pessoa</option>
+ <option class="PB" value="cidade54">Patos</option>
+ <option class="PB" value="cidade55">Santa Rita</option>
+ </optgroup>
+
+ <optgroup label="SE">
+ <option class="SE" value="cidade57">Aracaju</option>
+ <option class="SE" value="cidade58">São Cristóvão</option>
+ <option class="SE" value="cidade59">Lagarto</option>
+ </optgroup>
+
+ <optgroup label="AL">
+ <option class="AL" value="cidade60">Maceió</option>
+ <option class="AL" value="cidade61">Penedo</option>
+ <option class="AL" value="cidade62">Marechal Deodoro</option>
+ </optgroup>
+ 
+ <optgroup label="BA">
+ <option class="BA" value="cidade63">Salvador</option>
+ <option class="BA" value="cidade64">Ilhéus</option>
+ <option class="BA" value="cidade65">Vitória da Conquista</option>
+ </optgroup>
+
+ <optgroup label="MT">
+ <option class="MT" value="cidade67">Cuiabá</option>
+ <option class="MT" value="cidade68">Sorriso</option>
+ <option class="MT" value="cidade69">Rondonópolis</option>
+ </optgroup>
+
+ <optgroup label="MS">
+ <option class="MS" value="cidade70">Campo Grande</option>
+ <option class="MS" value="cidade71">Courados</option>
+ <option class="MS" value="cidade72">Ponta Porã</option>
+ </optgroup>
+
+ <optgroup label="GO">
+ <option class="GO" value="cidade73">Goiânia</option>
+ <option class="GO" value="cidade74">Anápolis</option>
+ <option class="GO" value="cidade75">Pirenópolis</option>
+ </optgroup>
+
+ <optgroup label="DF">
+ <option class="DF" value="cidade76">Gama</option>
+ <option class="DF" value="cidade77">Sobradinho</option>
+ <option class="DF" value="cidade78">Taguatinga</option>
+ </optgroup>
+
+ <optgroup label="SP">
+ <option class="SP" value="cidade79">Sorocaba</option>
+ <option class="SP" value="cidade80">Ribeirão Preto</option>
+ <option class="SP" value="cidade81">São Paulo</option>
+ </optgroup>
+
+ <optgroup label="RJ">
+ <option class="RJ" value="cidade82">Eldorado</option>
+ <option class="RJ" value="cidade83">Niterói</option>
+ <option class="RJ" value="cidade84">Angra dos Reis</option>
+ </optgroup>
+
+ <optgroup label="ES">
+ <option class="ES" value="cidade85">Vitória</option>
+ <option class="ES" value="cidade86">Vila Velha</option>
+ <option class="ES" value="cidade87">Serra</option>
+ </optgroup>
+
+ <optgroup label="MG">
+ <option class="MG" value="cidade88">Brumadinho</option>
+ <option class="MG" value="cidade89">Ouro Preto</option>
+ <option class="MG" value="cidade90">Belo Horizonte</option>
+ </optgroup>
+
+ <optgroup label="PR">
+ <option class="PR" value="cidade91">Curitiba</option>
+ <option class="PR" value="cidade92">Ponta Grossa</option>
+ <option class="PR" value="cidade93">Maringá</option>
+ </optgroup>
+
+ <optgroup label="RS">
+ <option class="RS" value="cidade94">Porto Alegre</option>
+ <option class="RS" value="cidade95">Rio Grande</option>
+ <option class="RS" value="cidade96">Caxias do Sul</option>
+ </optgroup>
+
+ <optgroup label="SC">
+ <option class="SC" value="cidade97">Balneário Camboriu</option>
+ <option class="SC" value="cidade98">Criciuma</option>
+ <option class="SC" value="cidade99">Blumenau</option>
+ </optgroup>
+
+ </select>
+ </fieldset>
+ <fieldset align="center">
+ <h2 align="center">Mensagem do Usuário</h2>
+ <p><label for="Grau">Grau de Urgência:</label></p>
+ <input type="radio" name="pequeno" value = "pequeno">
+ <label>Pequeno</label>
+ <input type="radio" name="médio" value = "médio">
+ <label>Médio</label>
+ <input type="radio" name="alto" value = "alto">
+ <label>Alto</label>
+ <form>
+ <p> <label for="texto_id"> Mensagem </label><br></p>
+ <textarea name="texto" id="texto_id" maxlenght="100"></textarea>
+
+ </form> 
+
+ <p><input type="hidden" name="MAX_FILE_SIZE" value="4194304" >
+ <input type="file" name="arquivo"/></p>
+ <p> <button type="reset" value="botao_id">Apagar</button>
+ <button type="submit" id="botao_id">Enviar </button>
+ </fieldset>
+ 
+ 
+    </form> 
+</body>
+</html>
